@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo-Wave</title>
+    <style>
+        body {
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(230, 246, 4, 0.1);
+            display: block;
+            text-align: right;
+        }
+
+        nav .logo {
+            float: left;
+            font-size: 20px;
+            color: #42235c;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        nav a {
+            color: #073a17;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        header {
+            display: block;
+            text-align: left;
+            padding: 50px 30px;
+            background-color: #f5f5f5;
+            position: relative;
+            height: 400px;
+        }
+
+        .header-content {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            z-index: 2;
+            position: relative;
+        }
+
+        .header-content h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #7f1b9a;
+        }
+
+        .header-content p {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #5a5a5a;
+        }
+
+        .header-content .explore {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7f1b9a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .header-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .search-box {
+            margin-top: 20px;
+        }
+
+        .search-box select {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .search-box .explore {
+            width: 15%;
+            padding: 10px;
+            margin-left: 10px;
+            background-color: #7f1b9a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #podcasts {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .podcasts {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .podcasts img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .podcasts h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #7f1b9a;
+        }
+
+        .podcasts p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .podcasts .hear-more {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #7f1b9a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        #contact form {
+            display: inline-block;
+            width: 300px;
+            text-align: left;
+        }
+
+        #contact label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #contact input,
+        #contact select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #7f1b9a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact button:hover {
+            background-color: #660075;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">EchoWave</div>
+        <a href="#">About us</a>
+        <a href="#">Program</a>
+        <a href="#">Podcast</a>
+        <a href="#">Trendingt</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Listen Now</h1>
+            <p>Embark on an electrifying auditory adventure 
+                through the heart of the city that never sleeps.</p>
+            <div class="search-box">
+                <select>
+                    <option value="">Hear us on</option>
+                    <option value="first">Spotify</option>
+                    <option value="second">Apple Podcast</option>
+                    <option value="third">Youtube Music</option>
+                </select>
+                <a href="#" class="explore">Explore</a>
+            </div>
+        </div>
+        <div class="header-image">
+            <img src="images/podcaster.png" alt="Echo-Wave">
+        </div>
+    </header>
+    
+    <section id="podcasts">
+        <div class="podcasts">
+            <img src="images/Podcast1.png" alt="Viswanathan Anand">
+            <h3>Stories and Insigts From India's Chess Grandmaster</h3>
+            <p>Viswanathan is a five-time World Chess Champion. Anand's most significant achievements include being a five-time World Chess Champion, winning the World Rapid Chess Championship, and the World Blitz Chess Championship.</p>
+            <a href="#" class="hear-more">Hear More</a>
+        </div>
+        <div class="podcasts">
+            <img src="images/podcast2.png" alt="Namita Gokhale">
+            <h3>Indian Writer on Building JLF,Uncovering Indian Stories and cultural Entrepreneurship</h3>
+            <p>Namita outlines her writing styles, her inspirations, and her experiences. The story of how she dropped out of college to become one of India’s acclaimed authors and co-directors to one of the world’s largest literature festivals.</p>
+            <a href="#" class="hear-more">Hear More</a>
+        </div>
+        <div class="podcasts">
+            <img src="images/podcast3.png" alt="Dr Harry Cliffx">
+            <h3>Unlocking the universe: deep dive into particle physics</h3>
+            <p>Harry Cliff, a particle physicist at the University of Cambridge, is deeply involved in the LHCb experiment at CERN. Committed to science communication, he has curated exhibitions at the Science Museum in London and authored the popular
+            book How To Make An Apple Pie From Scratch.</p>
+            <a href="#" class="hear-more">Hear More</a>
+        </div>
+        <div class="podcasts">
+            <img src="images/podcast4.png" alt="Vani Kola">
+            <h3>Venture Captalist Vani Kola on What she looks for in Startups, her journey and the Indian Market</h3>
+            <p>Vani Kola, co-founder of Kalaari Capital, a prominent venture capital firm in India known for its strategic investments in high-potential startups across various sectors.</p>
+            <a href="#" class="hear-more">Hear More</a>
+        </div>
+        <div class="podcasts">
+            <img src="images/podcast5.png" alt="Matthew Parker">
+            <h3>Decline of British Empire and its untold stories</h3>
+            <p>British historian Matthew Parker as we delve into the rich tapestry of British history. In this episode, Parker shares fascinating stories and insights from his extensive research,
+            bringing to life the people and events that have shaped Britain’s past.</p>
+            <a href="#" class="hear-more">Hear More</a>
+        </div>
+        <div class="podcasts">
+            <img src="images/podcast6.png" alt="Sudha Murthy">
+            <h3>Writing to TELCO, charitable initiatives, and Life lessons</h3>
+            <p>Sudha Murty is a distinguished Indian author and social worker, renowned for her contributions to literature and philanthropy. She has played a pivotal role in initiatives focused on education, healthcare, and rural development,
+            significantly improving the lives of many. Beyond her professional achievements, she is celebrated for her humility and unwavering dedication to helping the underprivileged. </p>
+            <a href="#" class="hear-more">Hear More</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Subscribe us</h2>
+        <p>Stay in Tune with the Latest Beats!</p>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="hear-now">Hearing on</label>
+            <select id="hear-now" name="home-town">
+                <option value="">Choose</option>
+                <option value="hear1">spotify</option>
+                <option value="hear2">youtube music</option>
+                <option value="hear3">Apple Podcast</option>
+            </select>
+            
+            <form action="#" method="post">
+                <label for="name">email</label>
+                <input type="email" id="name" name="name">
+            
+            <label for="contact-number">Contact Number</label>
+            <input type="text" id="contact-number" name="contact-number">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
